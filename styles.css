@@ -1,103 +1,89 @@
-h1, h2, h3, p, ol, ul {
-	margin: 0;
-	padding: 0;
+
+
+@font-face {
+    font-family: 'gg sans Normal Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('gg sans Normal Regular'), url('gg sans Regular.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'gg sans Medium Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('gg sans Medium Regular'), url('gg sans Medium.woff') format('woff');
+    }
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 340px;
+    margin: auto;
+    font-family: 'gg sans Medium Regular';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    background-color: #EBEDEF;
+    color: #4E5058;
+    margin-top: 100px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0px 0px 30px #3139fb;
 }
 
-* { box-sizing:border-box; }
-
-img { max-width:100%; }
-
-/************* End CSS RESETS **************/
-
-body {
-	background:url(images/paper.png);
-	color: #424242;
-	font-family: 'Source Sans Pro', sans-serif;
-	padding: 30px 0;
+.banner {
+    height: 60px;
+    background-color: #3139fb;
+    border-radius: 8px 8px 0 0;
 }
 
-#page {
-	max-width: 980px;
-	margin: auto;
+img {
+    height: 80px;
+    border-radius: 100%;
+    border: 5px solid #EBEDEF;
+    position: absolute;
+    top: 16px;
+    left: 16px
 }
 
-header {
-	border-bottom: 3px solid #424242;
-	padding-bottom: 20px;
+.info {
+    margin: 50px 16px 16px 16px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
 }
 
-header, footer {
-	margin: 0 10px;
-}
-section {
-	padding:20px 0;
-}
-
-footer {
-	border-top: 3px solid #424242;
-	padding-top: 20px;
+.name {
+    margin: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #85868a;
+    font-size: 20px;
 }
 
-#about {
-	padding: 10px;
+.text {
+    padding: 12px;
+    padding-top: 0px;
 }
 
-#projects {
-	padding: 10px;
+h2 {
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 12px 0 0;
 }
 
-.alignleft {
-	float: left;
-	margin: 0 10px 5px 0;
+textarea {
+    background-color: rgba(0,0,0,0);
+    padding: 4px;
+    font-family: 'gg sans Medium Regular';
+    border: 0px;
+    resize: none;
+    color: #4E5058;
+    width: 250px
 }
 
-/************ typography *************/
 
-h1, h2, h3 {
-	font-family: 'Bitter', serif;
-	margin-bottom:.5em;
-}
-
-h1 {
-	font-size:150%;
-	text-transform:uppercase;
-}
-
-header h1 {
-	font-size:300%;
-	margin-bottom:.1em;
-}
-
-p {
-	line-height:1.5em;
-	margin-bottom:1em;
-}
-
-ul, ol {
-	margin-bottom:1em;
-	padding-left:1.2em;
-}
-
-li {
-	margin-bottom:.5em;
-}
-
-a {
-	text-decoration:none;
-	color:#045685;
-}
-
-a:hover {
-	text-decoration:underline;
-}
-
-@media only screen and (min-width: 600px) {
-	
-	main { display: flex;}
-	#about { flex: 2; }
-	#projects { flex: 1; }
-	
-}
 
 
 	
